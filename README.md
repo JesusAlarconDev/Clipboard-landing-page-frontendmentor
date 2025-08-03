@@ -6,6 +6,10 @@ Una landing page moderna y responsive proyecto de FrontedMentor.
 
 Clipboard Landing Page es un proyecto de FrontendMentor de maquetación. El proyecto utiliza de HTML5, CSS3 y diseño responsive, creando una experiencia de usuario fluida tanto en dispositivos móviles como de escritorio.
 
+## 🌐 Demo en Vivo
+
+**¡Prueba la aplicación aquí!** 👉 [Ver Demo](https://clipboard-landing-page-frontendment.vercel.app/)
+
 
 ## 🔧 Características Técnicas
 - **HTML5 Semántico**: Estructura limpia y accesible
@@ -15,11 +19,7 @@ Clipboard Landing Page es un proyecto de FrontendMentor de maquetación. El proy
 
 ## 📸 Capturas de Pantalla
 
-### Desktop View
-![Vista Desktop](images/bg-header-desktop.png)
-
-### Mobile View
-![Vista Mobile](images/bg-header-mobile.png)
+![Vista Desktop](images/screenshot-app.png)
 
 ## 🚀 Instalación
 
@@ -31,12 +31,12 @@ Clipboard Landing Page es un proyecto de FrontendMentor de maquetación. El proy
 
 1. **Clona el repositorio**
    ```bash
-   git clone https://github.com/tu-usuario/clipboard-landing-page.git
+   git clone https://github.com/JesusAlarconDev/Clipboard-landing-page-frontendmentor.git
    ```
 
 2. **Navega al directorio del proyecto**
    ```bash
-   cd clipboard-landing-page
+   cd clipboard-landing-page-frontendmentor
    ```
 
 3. **Abre el archivo index.html**
