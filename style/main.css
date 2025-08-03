@@ -1,0 +1,302 @@
+/* Variables */
+
+:root {
+    --color-strong-cyan: hsl(171, 66%, 44%);
+    --color-light-blue: hsl(233, 100%, 69%);
+    --color-dark-grayish-blue: hsl(210, 10%, 33%);
+    --color-grayish-blue: hsl(201, 11%, 66%);
+    --color-light-gray: hsl(210, 30%, 96%);
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: "Bai Jamjuree";
+    font-weight: 400;
+    src: url(../font/BaiJamjuree-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Bai Jamjuree";
+    font-weight: 600;
+    src: url(../font/BaiJamjuree-SemiBold.ttf);
+}
+
+/* General */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff url("../images/bg-header-desktop.png") no-repeat;
+    background-size: contain;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-grayish-blue);
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-dark-grayish-blue);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Header */
+
+header {
+    margin: 130px auto 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+header h1 {
+    margin-top: 40px;
+    font-size: 38px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons a {
+    padding: 13px 31px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-iOS {
+    background: var(--color-strong-cyan);
+    box-shadow: 0 3px #219F89;
+    margin-right: 15px;
+}
+
+.btn-Mac {
+    background: var(--color-light-blue);
+    box-shadow: 0 3px #5161DA;
+}
+
+.btn-iOS:hover {
+    background: #5DCCBB;
+}
+
+.btn-Mac:hover {
+    background: #8896FF;
+}
+
+/* Main Content */
+
+.content-1,
+.content-2,
+.content-3 {
+    margin: 145px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-3 {
+    margin-top: -65px;
+}
+
+.title-description {
+    max-width: 600px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.content-1 .features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -132px;
+    position: relative;
+}
+
+.content-1 .features img {
+    left: -132px;
+}
+
+.description {
+    min-width: 300px;
+    max-width: 500px;
+    margin: 5%;
+}
+
+.description div {
+    margin-bottom: 50px;
+    margin-left: 55px;
+}
+
+.description h3 {
+    margin-bottom: 10px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 200px;
+}
+
+.card {
+    width: 25%;
+    text-align: center;
+}
+
+.card img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.marks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 80px;
+}
+
+.download {
+    max-width: 90%;
+    min-height: 400px;
+    margin: -10px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+
+footer {
+    background: rgb(245, 246, 248);
+    width: 100%;
+    min-height: 150px;
+    padding: 20px 10%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+footer .links {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    grid-auto-flow: column;
+}
+
+.links a {
+    height: 30%;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--color-dark-grayish-blue);
+}
+
+.links a:hover {
+    color: var(--color-strong-cyan);
+}
+
+.social-media {
+    margin-left: 20%;
+}
+
+#icon-f,
+#icon-t,
+#icon-i {
+    font-size: 30px;
+    margin: 10px;
+    color: var(--color-dark-grayish-blue);
+}
+
+#icon-f:hover,
+#icon-t:hover,
+#icon-i:hover {
+    color: var(--color-strong-cyan);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 932px) {
+    body {
+        background-image: url("../images/bg-header-mobile.png");
+    }
+    header,
+    footer,
+    .content-1,
+    .description div,
+    .content-2,
+    .content-3,
+    .cards-container,
+    .marks,
+    .features,
+    .download,
+    .card,
+    .social-media {
+        width: 90%;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    .content-1 .features {
+        left: auto;
+    }
+    .card img {
+        width: 60px;
+    }
+    div>img {
+        width: 90%;
+    }
+    .marks a {
+        margin: 30px;
+    }
+    footer {
+        margin-top: 60px;
+        justify-content: center;
+    }
+    footer div,
+    footer img,
+    .card,
+    .description div {
+        margin: 30px;
+    }
+    footer .links {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .buttons {
+        width: 90%;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+    .buttons a {
+        margin: 10px;
+    }
+}
